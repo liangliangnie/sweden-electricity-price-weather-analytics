@@ -52,6 +52,9 @@ Electricity Silver    Weather Silver
                   │
               Power BI
 ```
+### Architecture Diagram
+
+![Sweden Electricity Analytics Data Pipeline](architecture/architecture.png)
 
 The two source datasets are integrated at hourly level using:
 
@@ -65,6 +68,8 @@ The two source datasets are integrated at hourly level using:
 
 Hourly electricity price data for Sweden's four bidding zones.
 
+**Source:** Elprisetjustnu
+
 The pipeline stores:
 
 - SEK/kWh
@@ -76,6 +81,8 @@ The pipeline stores:
 ### Weather
 
 Historical hourly weather observations from Open-Meteo.
+
+**Source:** Open-Meteo
 
 Variables used in the analysis include:
 
@@ -293,6 +300,16 @@ This allows the analytical dataset to be maintained as new observations become a
 - Statistical analysis
 - Correlation analysis
 
+---
+
+## Explore the Project
+
+- [Electricity pipeline notebooks](electricity/)
+- [Weather pipeline notebooks](weather/)
+- [Gold layer & QC notebooks](gold/)
+- [Power BI screenshots](powerbi/screenshots/)
+- [Data pipeline documentation](docs/pipeline.md)
+- [Data quality documentation](docs/data_quality.md)
 --- 
 
 ## Repository Structure
