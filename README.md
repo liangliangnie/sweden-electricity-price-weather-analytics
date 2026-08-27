@@ -68,21 +68,15 @@ The two source datasets are integrated at hourly level using:
 
 Hourly electricity price data for Sweden's four bidding zones.
 
-**Source:** Elprisetjustnu
+**Source:** [Elprisetjustnu API](https://www.elprisetjustnu.se/elpris-api)
 
-The pipeline stores:
-
-- SEK/kWh
-- EUR/kWh
-- Exchange rate
-- Start and end timestamps
-- Bidding zone
+The API provides electricity prices for SE1, SE2, SE3 and SE4.
 
 ### Weather
 
 Historical hourly weather observations from Open-Meteo.
 
-**Source:** Open-Meteo
+**Source:** [Open-Meteo Historical Weather API](https://open-meteo.com/en/docs/historical-weather-api)
 
 Variables used in the analysis include:
 
